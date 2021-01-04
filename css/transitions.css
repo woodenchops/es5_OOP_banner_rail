@@ -1,0 +1,25 @@
+.retail-rail-container {
+    transition: transform 1s;
+    transform: translateY(-150%);
+    visibility: hidden;
+}
+
+
+.active-retail-rail {
+    transform: translateY(0%);
+    visibility: visible;
+}
+
+.positionFixedToBottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.retail-rail-container.positionFixedToBottom {
+    transform: translateY(150%);
+}
+
+.active-retail-rail.positionFixedToBottom {
+    transform: translateY(0%);
+}
